@@ -1,12 +1,12 @@
 {
 	"name": "francois-bocuher-react-ts-app",
-	"homepage": "https://MrToro.github.io/francois-bocuher-react-ts-app",
 	"private": true,
 	"version": "0.0.0",
+	"homepage": "https://MrToro.github.io/francois-bocuher-react-ts-app",
 	"type": "commonjs",
 	"scripts": {
 		"dev": "vite",
-		"predeploy": "tsc && vite build",
+		"build": "tsc && vite build",
 		"deploy": "gh-pages -d dist",
 		"preview": "vite preview"
 	},
