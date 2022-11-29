@@ -1,7 +1,7 @@
 {
 	"name": "francois-bocuher-react-ts-app",
 	"private": true,
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"homepage": "https://MrToro.github.io/francois-bocuher-react-ts-app",
 	"type": "commonjs",
 	"scripts": {
