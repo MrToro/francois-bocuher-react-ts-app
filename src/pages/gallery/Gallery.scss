@@ -1,0 +1,22 @@
+@use 'src/sass/colors';
+@use 'src/sass/font';
+@use 'src/sass/breakpoints' as media;
+
+.gallery {
+  display: grid;
+  gap: 5rem;
+	min-height: 50vh;
+	padding-block: 5rem;
+
+  @include media.desktop {
+	  min-height: 100vh;
+  }
+
+  &__info-container {
+    display: grid;
+    
+    @include media.desktop {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+}
