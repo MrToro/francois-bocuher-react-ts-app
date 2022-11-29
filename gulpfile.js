@@ -5,9 +5,9 @@ const webp = require('gulp-webp');
 const avif = require('gulp-avif');
 
 function images() {
-	return src('src/assets/**/*')
+	return src('src/**/*')
 		.pipe(imagemin({ optimizationLevel: 3 }))
-		.pipe(dest('build/assets'));
+		.pipe(dest('src'));
 }
 
 function convertToWebp() {
@@ -15,7 +15,7 @@ function convertToWebp() {
 		quality: 50,
 	};
 
-	return src('src/assets/**/*.{png,jpg}').pipe(webp(options)).pipe(dest('build/assets'));
+	return src('src/**/*.{png,jpg}').pipe(webp(options)).pipe(dest('src'));
 }
 
 function convertToAvif() {
@@ -23,13 +23,13 @@ function convertToAvif() {
 		quality: 50,
 	};
 
-	return src('src/assets/**/*.{png,jpg}').pipe(avif(options)).pipe(dest('build/assets'));
+	return src('src/**/*.{png,jpg}').pipe(avif(options)).pipe(dest('src'));
 }
 
 function dev() {
-	watch('src/assets/**/*', images);
-	watch('src/assets/**/*', convertToWebp);
-	watch('src/assets/**/*', convertToAvif);
+	watch('src/**/*', images);
+	watch('src/**/*', convertToWebp);
+	watch('src/**/*', convertToAvif);
 }
 
 exports.dev = dev;
