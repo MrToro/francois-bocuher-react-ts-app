@@ -82,7 +82,7 @@
 		}
 
 		&::after {
-			content: url('./main_star.svg');
+			content: url('../main_star.svg');
 			position: absolute;
 			top: calc(50% - 500px);
 			left: calc(0px - 500px - 25px);
