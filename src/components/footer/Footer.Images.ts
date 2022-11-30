@@ -1,14 +1,14 @@
 const images = {
 	socials: {
-		instagram: 'public/footer_instagram.svg',
-		facebook: 'public/footer_facebook.svg',
-		twitter: 'public/footer_twitter.svg',
-		tumblr: 'public/footer_tumblr.svg',
+		instagram: 'footer_instagram.svg',
+		facebook: 'footer_facebook.svg',
+		twitter: 'footer_twitter.svg',
+		tumblr: 'footer_tumblr.svg',
 	},
 	logo: {
-		avif: 'public/header_logo.avif',
-		webp: 'public/header_logo.webp',
-		png: 'public/header_logo.png',
+		avif: 'header_logo.avif',
+		webp: 'header_logo.webp',
+		png: 'header_logo.png',
 	},
 };
 

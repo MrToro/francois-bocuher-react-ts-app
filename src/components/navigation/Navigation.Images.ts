@@ -1,6 +1,6 @@
 const images = {
 	line: {
-		svg: 'public/line.svg',
+		svg: 'line.svg',
 	},
 };
 

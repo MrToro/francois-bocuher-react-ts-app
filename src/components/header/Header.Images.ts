@@ -1,11 +1,11 @@
 const images = {
 	header_logo: {
-		avif: 'public/header_logo.avif',
-		webp: 'public/header_logo.webp',
-		png: 'public/header_logo.png',
+		avif: 'header_logo.avif',
+		webp: 'header_logo.webp',
+		png: 'header_logo.png',
 	},
 	line: {
-		svg: 'public/line.svg',
+		svg: 'line.svg',
 	},
 };
 

@@ -1,13 +1,13 @@
 const images = {
 	hero: {
-		avif: 'public/main_hero.avif',
-		webp: 'public/main_hero.webp',
-		jpg: 'public/main_hero.jpg',
+		avif: 'main_hero.avif',
+		webp: 'main_hero.webp',
+		jpg: 'main_hero.jpg',
 	},
 	sideImage: {
-		avif: 'public/main_side-image.avif',
-		webp: 'public/main_side-image.webp',
-		jpg: 'public/main_side-image.jpg',
+		avif: 'main_side-image.avif',
+		webp: 'main_side-image.webp',
+		jpg: 'main_side-image.jpg',
 	},
 };
 
