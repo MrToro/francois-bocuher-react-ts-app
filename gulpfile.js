@@ -6,7 +6,16 @@ const avif = require('gulp-avif');
 
 function images() {
 	return src('src/images/**/*')
-		.pipe(imagemin({ optimizationLevel: 3 }))
+		.pipe(
+			imagemin([
+				imagemin.gifsicle({ interlaced: true }),
+				imagemin.mozjpeg({ quality: 20, progressive: true }),
+				imagemin.optipng({ optimizationLevel: 3 }),
+				imagemin.svgo({
+					plugins: [{ removeViewBox: true }, { cleanupIDs: false }],
+				}),
+			])
+		)
 		.pipe(dest('public'));
 }
 
