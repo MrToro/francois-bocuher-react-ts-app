@@ -1,0 +1,37 @@
+@use 'src/sass/colors';
+@use 'src/sass/font';
+@use 'src/sass/breakpoints' as media;
+
+.contact {
+  padding-block: 16rem;
+  background-image: url("../contact_background.png");
+
+  &__form {
+    width: min(460px, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    background-color: colors.white(0.9);
+    padding-block: 6rem;
+    padding-inline: 10%;
+    border-radius: 900px 900px 16px 16px;
+    backdrop-filter: blur(10px);
+
+    @include media.tablet {
+      padding-inline: 6rem;
+    }
+  }
+
+  &__title {
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.form {
+  &__label {
+    display: flex;
+    flex-direction: column;
+  }
+}

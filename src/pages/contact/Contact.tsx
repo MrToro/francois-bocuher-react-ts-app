@@ -1,25 +1,30 @@
+import './Contact.scss';
+
 
 function Contact() {
   return (
-		<section className='container contact'>
-			<form className='contact__form' action='' method='post'>
-				<h3>Any Questions?</h3>
-				<label>
-					Name:
-					<input type='text' name='name' />
-				</label>
+		<section className='contact'>
+			<div className='container contact__form-container'>
+				<form className='contact__form form' action='' method='post'>
+					<h3 className='contact__title'>Any Questions?</h3>
 
-				<label>
-					Email:
-					<input type='text' name='name' />
-				</label>
+					<label className='form__label input-label'>
+						Name:
+						<input className='input-text' type='text' name='name' placeholder='Enter your name' />
+					</label>
 
-				<label>
-					Email:
-					<textarea rows={5} cols={5} />
-				</label>
-				<input className='btn' type='submit' value='Submit' />
-			</form>
+					<label className='form__label input-label'>
+						Email:
+						<input className='input-text' type='text' name='name' placeholder='Enter your email' />
+					</label>
+
+					<label className='form__label input-label'>
+						Question:
+						<textarea className='input-area' rows={5} cols={5} placeholder='Enter your question' />
+					</label>
+					<input className='btn before-circle-left' type='submit' value='Submit' />
+				</form>
+			</div>
 		</section>
 	);
 }
