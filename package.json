@@ -3,7 +3,7 @@
 	"private": true,
 	"version": "0.0.1",
 	"homepage": "https://mrtoro.github.io/francois-bocuher-react-ts-app",
-	"type": "commonjs",
+	"type": "module",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
